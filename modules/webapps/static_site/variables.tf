@@ -67,3 +67,6 @@ variable "private_endpoints" {
   default  = {}
   nullable = false
 }
+variable "private_dns" {
+  default = {}
+}
