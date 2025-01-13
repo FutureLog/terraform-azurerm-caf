@@ -63,4 +63,7 @@ variable "diagnostics" {
 variable "custom_domains" {
   default = {}
 }
-variable "private_endpoints" {}
+variable "private_endpoints" {
+  default  = {}
+  nullable = false
+}
