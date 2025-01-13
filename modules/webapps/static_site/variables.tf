@@ -70,3 +70,11 @@ variable "private_endpoints" {
 variable "private_dns" {
   default = {}
 }
+variable "virtual_subnets" {
+  description = "Map of virtual_subnets objects"
+  default     = {}
+  nullable    = false
+}
+variable "vnets" {
+  default = {}
+}
