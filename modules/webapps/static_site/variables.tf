@@ -12,6 +12,7 @@ variable "name" {
 
 variable "location" {
   description = "(Required) Resource Location"
+  default     = null
 }
 
 variable "resource_group_name" {
