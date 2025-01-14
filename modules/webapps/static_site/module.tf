@@ -12,7 +12,7 @@ resource "azurerm_static_site" "static_site" {
   name                = azurecaf_name.static_site.result
   location            = var.location
   resource_group_name = var.resource_group_name
-  tags                = local.tags
+  tags                       = merge(local.tags, try(var.settings.tags, {}))
 
   sku_size = var.sku_size
   sku_tier = var.sku_tier
