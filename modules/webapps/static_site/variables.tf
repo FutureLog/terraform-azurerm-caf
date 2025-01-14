@@ -5,6 +5,10 @@ variable "client_config" {
 variable "tags" {
   description = "(Required) map of tags for the deployment"
 }
+variable "base_tags" {
+  description = "Base tags for the resource to be inherited from the resource group."
+  type        = bool
+}
 
 variable "name" {
   description = "(Required) Name of the Static Site"
