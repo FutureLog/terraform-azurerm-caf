@@ -3,7 +3,7 @@ variable "client_config" {
 }
 
 variable "tags" {
-  description = "(Required) map of tags for the deployment"
+  default = null
 }
 variable "base_tags" {
   description = "Base tags for the resource to be inherited from the resource group."
