@@ -22,6 +22,9 @@ variable "location" {
 variable "resource_group_name" {
   description = "(Required) Resource group of the Static Site"
 }
+variable "resource_group" {
+  description = "Resource group object to deploy the virtual machine"
+}
 
 variable "sku_tier" {
   description = "Specifies the SKU tier of the Static Web App. Possible values are Free or Standard. Defaults to Free."
