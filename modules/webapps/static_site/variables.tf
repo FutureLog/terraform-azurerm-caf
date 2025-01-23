@@ -21,9 +21,11 @@ variable "location" {
 
 variable "resource_group_name" {
   description = "(Required) Resource group of the Static Site"
+  default     = null
 }
 variable "resource_group" {
   description = "Resource group object to deploy the virtual machine"
+  default     = null
 }
 
 variable "sku_tier" {
@@ -71,14 +73,6 @@ variable "private_endpoints" {
   default  = {}
   nullable = false
 }
-variable "private_dns" {
-  default = {}
-}
-variable "virtual_subnets" {
-  description = "Map of virtual_subnets objects"
-  default     = {}
-  nullable    = false
-}
-variable "vnets" {
-  default = {}
-}
+variable "private_dns" {}
+
+variable "vnets" {}
